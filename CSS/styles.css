@@ -1,39 +1,43 @@
 :root {
-    --white:#FFFFFF;
-    --primary-blue:#8db6df;
-    --alice-blue:#f0f5f6;
-    --light-blue:#ecf0f4;
-    --dark-blue:#475d73;
-    --sea-blue:#c1ddf6;
-    --light-gray:#f5f6f6;
-    --heavey-blue:#24252a;
-    --normal-blue:#445a70;
-    --shadow-blue:#719ECE;
-    --font30:30px;
-    --font20:20px;
-    --font15:15px;
-    --font13:13px;
-    --font12:12px;
+    --white: #FFFFFF;
+    --primary-blue: #90b4dc;
+    --alice-blue: #f0f5f6;
+    --light-blue: #ecf0f4;
+    --dark-blue: #475d73;
+    --sea-blue: #c1ddf6;
+    --light-gray: #f5f6f6;
+    --heavy-blue: #24252a;
+    --blue: #445a70;
+    --shadow-blue: #719ECE;
+    --font-size-lg: 30px;
+    --font-size-20: 20px;
+    --font-size-md: 15px;
+    --font-szie-13: 13px;
+    --font-size-sm: 12px;
 }
 
-.primary-color {
-    background-color:var(--primary-blue);
+.primary {
+    background-color: var(--primary-blue);
 }
 
 .dark-blue {
-    color:var(--dark-blue);
+    color: var(--dark-blue);
 }
 
 .light-blue {
-    color:var(--light-blue);
+    color: var(--light-blue);
 }
 
 .sea-blue {
     background-color: var(--sea-blue);
 }
 
-.normal-blue {
-    color:var(--normal-blue);
+.blue {
+    color: var(--blue);
+}
+
+.heavy-blue {
+    color: var(--heavy-blue);
 }
 
 .alice-blue {
@@ -41,26 +45,26 @@
 }
 
 @media(max-width: 768px) {
-    .header {
-        font-size: var(--font20);
-    } 
-    .input-label {
-        font-size:  var(--font12);
+    .font-size-lg {
+        font-size: var(--font-size-20);
+    }
+    .font-size-sm {
+        font-size: var(--font-size-sm);
     }
 }
 
 @media(min-width: 768px) {
-    .header {
-        font-size: var(--font30);
-     } 
+    .font-size-lg {
+        font-size: var(--font-size-lg);
+    }
 }
 
-.subheader {
-    font-size: var(--font15);
+.font-size-md {
+    font-size: var(--font-size-md);
 }
 
-.information {
-    font-size:var(--font13);
+.font-size-13 {
+    font-size: var(--font-size-13);
 }
 
 .border {
@@ -74,28 +78,28 @@
 }
 
 .input-text {
-    background-color:var(--light-gray);
-    color:var(--heavey-blue);
+    background-color: var(--light-gray);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .submit-btn {
-    background-color:var(--sea-blue);
-    color:var(--dark-blue);
+    background-color: var(--sea-blue);
+    color: var(--dark-blue);
 }
+
 .submit-btn:hover {
-    background-color:var(--dark-blue) ;
-    color:var(--sea-blue);
+    background-color: var(--dark-blue);
+    color: var(--sea-blue);
 }
 
 .loading {
     display: flex;
     align-items: center;
     z-index: 99;
-    top:0;
+    top: 0;
     background-color: var(--white);
 }
 
 .loading-image {
-    z-index:100;
+    z-index: 100;
 }
